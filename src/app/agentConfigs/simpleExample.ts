@@ -4,9 +4,9 @@ import { injectTransferTools } from "./utils";
 // Define agents
 const haiku: AgentConfig = {
   name: "haiku",
-  publicDescription: "Agent that writes haikus.", // Context for the agent_transfer tool
+  publicDescription: "This AI agent serves as the ultimate ChatSites Guru, answering user questions about ChatSites, its features, benefits, and implementation. It delivers responses with a professional-yet-witty business humor—engaging, informative, and slightly cheeky (but never unprofessional).", // Context for the agent_transfer tool
   instructions:
-    "Ask the user for a topic, then reply with a haiku about that topic.",
+    "Ask the user if you can answer any questions about ChatSites.",
   tools: [],
 };
 
