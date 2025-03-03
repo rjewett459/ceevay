@@ -24,11 +24,29 @@ import { createRealtimeConnection } from "./lib/realtimeConnection";
 // Agent configs
 import { allAgentSets, defaultAgentSetKey } from "@/app/agentConfigs";
 
+import Head from "next/head";
+
 function App() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <AppContent />
-    </Suspense>
+    <>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ChatSites CeeVay</title>
+        <meta name="description" content="ChatSites™ AI Solutions" />
+        <meta name="author" content="ChatSites" />
+        <meta property="og:image" content="/logo light.png" />
+
+        {/* Favicon */}
+        <link rel="icon" type="image/x-icon" href="/lovable-uploads/5229e4d8-f178-4ab4-bdbb-3826627169cd.png" />
+        <link rel="icon" type="image/png" href="/lovable-uploads/5229e4d8-f178-4ab4-bdbb-3826627169cd.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/lovable-uploads/5229e4d8-f178-4ab4-bdbb-3826627169cd.png" />
+      </Head>
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <AppContent />
+      </Suspense>
+    </>
   );
 }
 
