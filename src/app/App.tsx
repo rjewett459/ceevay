@@ -35,7 +35,7 @@ function App() {
         <title>ChatSites CeeVay</title>
         <meta name="description" content="ChatSites™ AI Solutions" />
         <meta name="author" content="ChatSites" />
-        <meta property="og:image" content="/logo light.png" />
+        <meta property="og:image" content="/logo-light.png" />
 
         {/* Favicon */}
         <link rel="icon" type="image/x-icon" href="/lovable-uploads/5229e4d8-f178-4ab4-bdbb-3826627169cd.png" />
