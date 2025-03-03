@@ -416,20 +416,20 @@ function AppContent() {
         <div className="flex items-center">
           <div onClick={() => window.location.reload()} style={{ cursor: 'pointer' }}>
             <Image
-              src="/openai-logomark.svg"
-              alt="OpenAI Logo"
-              width={20}
-              height={20}
+              src="/chatsites-logo.png"
+              alt="ChatSites Logo"
+              width={45}
+              height={45}
               className="mr-2"
             />
           </div>
           <div>
-            Realtime API <span className="text-gray-500">Agents</span>
+            ChatSites™ <span className="text-gray-500">Portal</span>
           </div>
         </div>
         <div className="flex items-center">
           <label className="flex items-center text-base gap-1 mr-2 font-medium">
-            Scenario
+            Industry
           </label>
           <div className="relative inline-block">
             <select
