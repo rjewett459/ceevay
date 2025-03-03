@@ -36,6 +36,8 @@ function App() {
         <meta name="description" content="ChatSites™ AI Solutions" />
         <meta name="author" content="ChatSites" />
         <meta property="og:image" content="https://i.ibb.co/mrVkSLs4/logo-light.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
         {/* Favicon */}
         <link rel="icon" type="image/x-icon" href="/lovable-uploads/5229e4d8-f178-4ab4-bdbb-3826627169cd.png" />
