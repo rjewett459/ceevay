@@ -7,7 +7,7 @@ import Image from "next/image";
 
 // UI components
 import Transcript from "./components/Transcript";
-//removed
+import Events from "./components/Events";
 import BottomToolbar from "./components/BottomToolbar";
 
 // Types
