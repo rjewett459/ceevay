@@ -20,3 +20,51 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
+.side-panel {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background: #000;
+  color: white;
+  padding: 1rem;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 9999;
+}
+.side-panel.left {
+  left: 0;
+  transform: translateX(-100%);
+}
+.side-panel.right {
+  right: 0;
+  transform: translateX(100%);
+}
+.side-panel.show {
+  transform: translateX(0);
+}
+.hidden {
+  display: none;
+}
+
+.orb {
+  margin: 3rem auto;
+  width: 60px;
+  height: 60px;
+  background: #f65228;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(246, 82, 40, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(246, 82, 40, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(246, 82, 40, 0);
+  }
+}
+
