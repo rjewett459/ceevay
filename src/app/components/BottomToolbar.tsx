@@ -100,6 +100,16 @@ function BottomToolbar({
           Audio playback
         </label>
       </div>
+      <label>
+  <input type="checkbox" id="toggleOrb" />
+  Activate Voice View
+</label>
+
+<!-- Orb Panel -->
+<div id="orbPanel" class="side-panel left hidden">
+  <h3>Voice View</h3>
+  <div class="orb"></div>
+</div>
 
       <div className="flex flex-row items-center gap-2">
         <input
