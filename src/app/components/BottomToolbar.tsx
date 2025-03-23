@@ -27,6 +27,8 @@ function BottomToolbar({
   setIsEventsPaneExpanded,
   isAudioPlaybackEnabled,
   setIsAudioPlaybackEnabled,
+  isVoiceViewActive,
+  setIsVoiceViewActive,
 }: BottomToolbarProps) {
   const isConnected = sessionStatus === "CONNECTED";
   const isConnecting = sessionStatus === "CONNECTING";
@@ -100,15 +102,17 @@ function BottomToolbar({
           Audio playback
         </label>
       </div>
-      <label>
-  <input type="checkbox" id="toggleOrb" />
-  Activate Voice View
-</label>
-
-<!-- Orb Panel -->
-<div id="orbPanel" class="side-panel left hidden">
-  <h3>Voice View</h3>
-  <div class="orb"></div>
+<div className="flex flex-row items-center gap-2">
+  <input
+    id="voice-view"
+    type="checkbox"
+    checked={isVoiceViewActive}
+    onChange={(e) => setIsVoiceViewActive(e.target.checked)}
+    className="w-4 h-4"
+  />
+  <label htmlFor="voice-view" className="flex items-center cursor-pointer">
+    Activate Voice View
+  </label>
 </div>
 
       <div className="flex flex-row items-center gap-2">
